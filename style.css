@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Varela+Round&display=swap');
+
+/* Menu Navegacao */
+
+.subscription-nav {
+    height: 15vh;
+}
+
+#nav-list {
+    display: none !important;
+}
+
+#agency-about {
+    align-items: center;
+    background-image: url(./img/foto-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+#agency-about h1 p {
+    opacity: 70%;
+    color: #fff;
+}
+
+
+.about-title {
+    font-size: 6em;
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: 10px;
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+.about-text {
+    font-size: 2em;
+    padding: 0.5em;
+    text-align: center;
+}
+
+#cta-agency {
+    background-color: #829dad;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    height: 3em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+/* Agency description */
+
+#agency-description {
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
+    color: #fff;
+    height: 80vh;
+    text-align: center;
+}
+
+#agency-description > h2 {
+    font-size: 2em;
+    font-family: 'Varela Round', sans-serif;
+    padding-top: 2em;
+}
+
+#agency-description > p {
+    font-size: 1.5em;
+    padding: 1.5em;
+}
+
+/* Destinos container */
+
+#destinations-cards {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 1em 2em 1em;
+    text-align: center;
+}
+
+#destinations-cards img {
+    height: auto;
+    width: 100%;
+}
+
+#destinations-card-01 {
+    background-color: #fff;
+    color: black;
+    max-width: 100%;
+}
+
+.card-01-title {
+    color: black;
+    font-size: 2em;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 0.7em;
+}
+
+.card-01-description {
+    font-size: 1.2em;
+    padding: 1em 1em 1.5em 1em;
+}
+
+#destination-card-02 {
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
+    color: #fff;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.card-02-title {
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 0.7em;
+}
+
+
+.card-02-description {
+    font-size: 1.5em;
+    padding: 1em 1em 1.5em 1em;
+}
+
+#destinations-card-03 {
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+    max-width: 100%;
+    text-align: center;
+}
+
+#card-03-img {
+    order: 2; 
+    padding-bottom: 0;
+}
+
+.card-03-title {
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 0.7em;
+}
+
+.card-03-description {
+    font-size: 1.5em;
+    padding: 1em 1em 1.5em 1em;
+}
+
+footer {
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
+    display: flex;
+    flex-direction: column;
+}
+
+footer > h3 {
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Varela Round', sans-serif;
+    padding: 2em 2em;
+}
+
+footer > p {
+    padding: 1em 1em;
+    color: #fff;
+}
+
+/* Medias Queries */
+
+/* condição até 1024px - Desktop */
+
+@media screen and  (max-width: 1024px) { 
+
+    .subscription-nav {
+        height: 15vh;
+        background-color: #a0bed0;
+    }
+
+    #nav-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-end;
+        padding-right: 5em;
+    }
+
+    #nav-list li {
+        margin-top: 3em;
+    }
+
+    #nav-list li a {
+        font-size: 1.5em;
+        color: #fff;
+        text-decoration: none;
+        padding: 1em;
+
+    }
+
+    .about-title {
+        color: #fff;
+        opacity: 70%;
+    }
+
+    .about-text {
+        color: #fff;
+        opacity: 70%;
+        padding-bottom: 2em;
+
+    }
+
+    #cta-agency {
+        width: 40%;
+    }
+
+    #agency-description {
+        height: 40vh;
+    }
+
+    #agency-description > h2 {
+        padding-top: 1.5em;
+    }
+    
+    #agency-description > p {
+        padding: 2em 5em 0 5em;
+    }
+
+    #destinations-cards {
+        display: flex;
+        flex-direction: column;
+        margin: 2em 1em 2em 1em;
+        text-align: center;
+    }
+
+
+  }
